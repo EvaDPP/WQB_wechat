@@ -1,0 +1,47 @@
+<view class="classify">
+    <view class="left">
+        <scroll-view scroll-y style="height: 550px;">
+        <view bindtap="getSecond" data-id="{{item.Id}}" data-index="{{index}}" class="{{classIndex == index?'active':'each'}}" wx:for="{{classList}}" wx:key="index">
+            {{item.Name}}
+        </view>
+        </scroll-view>
+    </view>
+    <view class="right">
+        <view class="top">
+            <view class="title">
+                热门服务 >>
+            </view>
+            <view class="content">
+                <view class="eachItem" wx:for="{{ServiceList}}" wx:key="index" bindtap="tabGetThird" data-parentid="{{item.ParentId}}" data-name="{{item.Name}}">
+                    <image class="" src="{{item.ImgUrl}}"></image>
+                    <text>{{item.Name}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="title">
+                热销商品 >>
+            </view>
+            <scroll-view scroll-y style="height: 300px;">
+            <view class="eachItem" wx:for="{{tabTag?tabThirdList:ProductList}}" wx:key="index" bindtap="goDetail">
+                 <view class="left">
+                     <image src="{{item.ImgUrl}}"></image> 
+                 </view>
+                 <view class="right">
+                     <view class="b_Title">
+                         {{item.Name}}
+                     </view>
+                     <view class="price">
+                         <view class="num">
+                             ￥{{item.Price}}
+                         </view>
+                         <view class="sale">
+                             销量：{{item.Sold}}
+                         </view>
+                     </view>
+                 </view>
+            </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

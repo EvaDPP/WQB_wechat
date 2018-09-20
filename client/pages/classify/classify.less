@@ -1,0 +1,98 @@
+page{
+    height: 100%;
+    overflow: hidden;
+}
+.classify{
+    padding-top: 50rpx;
+    display: flex;
+    height: 100%;
+    overflow-y: hidden;
+    .left{
+        width: 180rpx;
+        text-align: center;
+        font-size: 28rpx;
+        color: #333;
+        .each{
+            margin-bottom: 80rpx;
+        }
+        .active{
+            color: #ff6b5f;
+            margin-bottom: 80rpx;
+        }
+    }
+    .right{
+        flex: 1;
+        text-align: center;
+        .title{
+            margin-bottom: 74rpx;
+            font-size: 28rpx;
+            color: #333;
+        }
+        .content{
+            overflow: hidden;
+            .eachItem{
+                float: left;
+                width: 33.33%;
+                text-align: center;
+                margin-bottom: 76rpx;
+                image{
+                    width: 88rpx;
+                    height: 88rpx;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 22rpx;
+                }
+                text{
+                    font-size: 20rpx;
+                    color: #666;
+                    display: block;
+                }
+            }
+        }
+        .bottom{
+            .eachItem{
+                overflow: hidden;
+                padding-bottom: 15rpx;
+                display: flex;
+                &:last-child{
+                    .right{
+                        border: none;
+                    }
+                }
+                >view{
+                    float: left;
+                }
+                .left{
+                    border: 1rpx solid #eee;
+                    text-align: center;
+                    width: 140rpx;
+                    height: 140rpx;
+                    image{
+                        width: 140rpx;
+                        height: 140rpx;
+                    }
+                }
+                .right{
+                    padding: 24rpx 26rpx 35rpx 16rpx;
+                    text-align: left;
+                    display: 1;
+                    border-bottom: 1px solid #eee;
+                    font-size: 24rpx;
+                    .b_Title{
+                        margin-bottom: 40rpx;
+                    }
+                    .price{
+                        display: flex;
+                        justify-content: space-between;
+                        .num{
+                            color: #ff6b5f;
+                        }
+                        .sale{
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

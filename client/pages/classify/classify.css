@@ -1,0 +1,94 @@
+page {
+  height: 100%;
+  overflow: hidden;
+}
+.classify {
+  padding-top: 50rpx;
+  display: flex;
+  height: 100%;
+  overflow-y: hidden;
+}
+.classify .left {
+  width: 180rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #333;
+}
+.classify .left .each {
+  margin-bottom: 80rpx;
+}
+.classify .left .active {
+  color: #ff6b5f;
+  margin-bottom: 80rpx;
+}
+.classify .right {
+  flex: 1;
+  text-align: center;
+}
+.classify .right .title {
+  margin-bottom: 74rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.classify .right .content {
+  overflow: hidden;
+}
+.classify .right .content .eachItem {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  margin-bottom: 76rpx;
+}
+.classify .right .content .eachItem image {
+  width: 88rpx;
+  height: 88rpx;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22rpx;
+}
+.classify .right .content .eachItem text {
+  font-size: 20rpx;
+  color: #666;
+  display: block;
+}
+.classify .right .bottom .eachItem {
+  overflow: hidden;
+  padding-bottom: 15rpx;
+  display: flex;
+}
+.classify .right .bottom .eachItem:last-child .right {
+  border: none;
+}
+.classify .right .bottom .eachItem > view {
+  float: left;
+}
+.classify .right .bottom .eachItem .left {
+  border: 1rpx solid #eee;
+  text-align: center;
+  width: 140rpx;
+  height: 140rpx;
+}
+.classify .right .bottom .eachItem .left image {
+  width: 140rpx;
+  height: 140rpx;
+}
+.classify .right .bottom .eachItem .right {
+  padding: 24rpx 26rpx 35rpx 16rpx;
+  text-align: left;
+  display: 1;
+  border-bottom: 1px solid #eee;
+  font-size: 24rpx;
+}
+.classify .right .bottom .eachItem .right .b_Title {
+  margin-bottom: 40rpx;
+}
+.classify .right .bottom .eachItem .right .price {
+  display: flex;
+  justify-content: space-between;
+}
+.classify .right .bottom .eachItem .right .price .num {
+  color: #ff6b5f;
+}
+.classify .right .bottom .eachItem .right .price .sale {
+  color: #666;
+}

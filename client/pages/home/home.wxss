@@ -1,0 +1,145 @@
+.home {
+  background: #f2f2f2;
+}
+.banner {
+  height: 361rpx;
+}
+.banner swiper {
+  height: 100%;
+}
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+.tab {
+  height: 300rpx;
+  padding-top: 22rpx;
+  background: #fff;
+}
+.tab .eachItem {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.tab image {
+  width: 70rpx;
+  height: 70rpx;
+}
+.tab text {
+  display: block;
+  font-size: 22rpx;
+  color: #888;
+  margin-bottom: 35rpx;
+}
+.news {
+  border-top: 1px solid #eee;
+  font-size: 24rpx;
+  height: 86rpx;
+  line-height: 86rpx;
+  padding-left: 24rpx;
+  background: #fff;
+  margin-bottom: 24rpx;
+}
+.news view {
+  display: inline-block;
+}
+.news .line {
+  margin: 0 13rpx;
+  color: #f2f2f2;
+}
+.three .top {
+  height: 205rpx;
+  width: 100%;
+}
+.three .top image {
+  width: 100%;
+  height: 100%;
+}
+.three .bottom {
+  height: 200rpx;
+  padding: 32rpx 0 0 0;
+  background: #fff;
+}
+.three .bottom > view {
+  float: left;
+  width: 33%;
+  text-align: center;
+  border-right: 1rpx solid #eee;
+}
+.three .bottom > view:nth-child(3) {
+  border: none;
+}
+.three .bottom > view image {
+  width: 152rpx;
+  height: 84rpx;
+  margin-top: 27rpx;
+}
+.three .bottom > view text {
+  font-size: 30rpx;
+  color: #333;
+}
+.hotRecommend {
+  padding: 29rpx 24rpx 0 24rpx;
+  background: #fff;
+  margin-top: 24rpx;
+}
+.hotRecommend .top {
+  display: flex;
+  justify-content: space-between;
+}
+.hotRecommend .top text:nth-child(1) {
+  font-size: 36rpx;
+  color: #333;
+}
+.hotRecommend .top text:nth-child(2) {
+  font-size: 24rpx;
+  color: #666;
+}
+.hotRecommend .content {
+  margin-top: 25rpx;
+  overflow: hidden;
+}
+.hotRecommend .content .each {
+  float: left;
+  margin-right: 15rpx;
+}
+.hotRecommend .content .each:nth-child(even) {
+  margin-right: 0;
+}
+.hotRecommend .content .each .top {
+  width: 340rpx;
+  height: 340rpx;
+  border: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+}
+.hotRecommend .content .each .top image {
+  width: 100%;
+  height: 100%;
+}
+.hotRecommend .content .each .bottom {
+  margin-bottom: 44rpx;
+  padding: 0 18rpx 0 15rpx;
+}
+.hotRecommend .content .each .bottom .title {
+  font-size: 30rpx;
+  color: #000;
+  margin-bottom: 14rpx;
+}
+.hotRecommend .content .each .bottom .price {
+  display: flex;
+  justify-content: space-between;
+}
+.hotRecommend .content .each .bottom .price text:nth-child(1) {
+  font-size: 30rpx;
+  color: #ff6b5f;
+}
+.hotRecommend .content .each .bottom .price text:nth-child(2) {
+  font-size: 24rpx;
+  color: #999;
+}
+.hotRecommend .bottomline {
+  font-size: 24rpx;
+  text-align: center;
+  color: #999;
+  margin-bottom: 40rpx;
+}

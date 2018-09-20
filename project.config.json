@@ -1,0 +1,13 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxe7666de2760dbaf4",
+	"projectname": "WQB_",
+	"libVersion": "2.3.0",
+	"condition": {}
+}

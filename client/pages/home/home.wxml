@@ -1,0 +1,78 @@
+<view class="home">
+    <!-- 轮播 -->
+    <view class="banner">
+        <swiper indicator-dots="true"
+            autoplay="true" interval="2000" duration="1000" circular="true">
+            <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+                <swiper-item>
+                    <image src="{{item.PosterImgURL}}" class="slide-image" width="100%"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- tab轮播 -->
+    <view class="tab">
+        <swiper indicator-dots="true">
+            <block wx:for="{{tabArr}}" wx:key="{{index}}">
+                <swiper-item>
+                    <view class="eachItem" wx:for="{{item}}" wx:for-item="data" wx:key="{{index}}">
+                        <image src="{{data.Img}}"></image>
+                        <text>{{data.Name}}</text>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 新闻 -->
+    <view class="news">
+        <text>微企宝</text>
+        <text class="line">|</text>
+        <text>快报</text>
+        <view class="content">
+            微企宝哈哈哈哈哈哈
+        </view>
+    </view>
+    <!-- 邀请有礼 -->
+    <view class="three">
+        <view class="top">
+            <image src="../../images/home/T-AD2@2x.png">
+            </image> 
+        </view>
+        <view class="bottom">
+            <view>
+                <text>邀请有礼</text> 
+                <image src="../../images/home/Y-Homepage-Invitescourtesy@3x.png"></image> 
+            </view> 
+            <view>
+                <text>领券中心</text> 
+                <image src="../../images/home/Y-Homepage-VoucherCenter@3x.png"></image> 
+            </view>
+            <view>
+                <text>签到领积分</text> 
+                <image src="../../images/home/Y-Homepageintegral@3x.png"></image> 
+            </view>
+        </view>
+    </view>
+    <!-- 人气推荐 -->
+    <view class="hotRecommend">
+        <view class="top">
+            <text>人气推荐</text>
+            <text>更多</text>
+        </view>
+        <view class="content">
+            <view class="each" wx:for="{{hotArr}}" wx:key="index">
+                <view class="top">
+                    <image src="{{item.ThumbImgURL}}"></image> 
+                </view>
+                <view class="bottom">
+                    <view class="title">{{item.Name}}</view>
+                    <view class="price">
+                        <text>￥{{item.Price}}</text> 
+                        <text>销量{{item.Sold}}</text> 
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="bottomline" wx:if="{{showBottomLine}}">————我们是有底线的————</view>
+    </view>
+</view>

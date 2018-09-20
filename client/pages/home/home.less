@@ -1,0 +1,147 @@
+.home{
+    background: #f2f2f2;
+}
+.banner{
+    height: 361rpx;
+    swiper{
+        height: 100%;
+    }
+    image{
+        width: 100%;
+        height: 100%;
+    }
+}
+.tab{
+    height: 300rpx;
+    padding-top: 22rpx;
+    background: #fff;
+    .eachItem{
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+    image{
+        width: 70rpx;
+        height: 70rpx;
+    }
+    text{
+        display: block;
+        font-size: 22rpx;
+        color: #888;
+        margin-bottom: 35rpx;
+    }
+}
+.news{
+    border-top: 1px solid #eee;
+    font-size: 24rpx;
+    height: 86rpx;
+    line-height: 86rpx;
+    padding-left: 24rpx;
+    background: #fff;
+    margin-bottom: 24rpx;
+    view{
+        display: inline-block;
+    }
+    .line{
+        margin: 0 13rpx;
+        color: #f2f2f2;
+    }
+}
+.three{
+    .top{
+        height: 205rpx;
+        width: 100%;
+        image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .bottom{
+        height: 200rpx;
+        padding: 32rpx 0 0 0;
+        background: #fff;
+        >view{
+            float: left;
+            width: 33%;
+            text-align: center;
+            border-right: 1rpx solid #eee;
+            &:nth-child(3){
+                border: none;
+            }
+            image{
+                width: 152rpx;
+                height: 84rpx;
+                margin-top: 27rpx;
+            }
+            text{
+                font-size: 30rpx;
+                color: #333;
+            }
+        }
+    }
+}
+.hotRecommend{
+    padding: 29rpx 24rpx 0 24rpx;
+    background: #fff;
+    margin-top: 24rpx;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        text:nth-child(1){
+            font-size: 36rpx;
+            color: #333;
+        } 
+        text:nth-child(2){
+            font-size: 24rpx;
+            color: #666;
+        } 
+    }
+    .content{
+        margin-top: 25rpx;
+        overflow: hidden;
+        .each{
+            float: left;
+            margin-right: 15rpx;
+            &:nth-child(even){
+                margin-right: 0;
+            }
+            .top{
+                width: 340rpx;
+                height: 340rpx;
+                border: 1rpx solid #eee;
+                margin-bottom: 20rpx;
+                image{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .bottom{
+                margin-bottom: 44rpx;
+                padding: 0 18rpx 0 15rpx;
+                .title{
+                    font-size: 30rpx;
+                    color: #000;
+                    margin-bottom: 14rpx;
+                }
+                .price{
+                    display: flex;
+                    justify-content: space-between;
+                    text:nth-child(1){
+                        font-size: 30rpx;
+                        color: #ff6b5f;
+                    }
+                    text:nth-child(2){
+                        font-size: 24rpx;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+    .bottomline{
+        font-size: 24rpx;
+        text-align: center;
+        color: #999;
+        margin-bottom: 40rpx;
+    }
+}
